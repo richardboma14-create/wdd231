@@ -1,0 +1,85 @@
+/* Larger screen layout */
+@media screen and (min-width: 38rem) {
+
+    /* Header and horizontal navigation */
+    header {
+        padding: 1rem 5%;
+        flex-wrap: nowrap;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+        gap: 0.5rem;
+    }
+
+    .navigation a {
+        padding: 0.65rem 1rem;
+        white-space: nowrap;
+    }
+
+    /* Main content */
+    main {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-layout {
+        grid-template-columns: 2fr 1fr;
+        align-items: stretch;
+        gap: 1.5rem;
+    }
+
+    .about {
+        grid-column: 1;
+    }
+
+    .photo {
+        grid-column: 2;
+    }
+
+    .certificate {
+        grid-column: 1 / -1;
+    }
+
+    /* Course filters */
+    .course-filters {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .course-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+}
+
+/* Extra-wide screens */
+@media screen and (min-width: 64rem) {
+
+    .home-layout {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .course-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

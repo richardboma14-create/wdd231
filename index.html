@@ -3,10 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <meta name="description" content="Boma Richards Ojugba's WDD 231 course homepage, featuring coursework, web development projects, and certificate courses.">
+    <meta name="author" content="Boma Richards Ojugba">
+    <title>WDD 231 | Boma Richards Ojugba</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>My website is now hosted on GitHub Pages.</p>
+    <header>
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="" width="48" height="48">
+            <span>Boma Richards Ojugba</span>
+        </a>
+
+        <button id="menuButton" aria-label="Open navigation menu"
+            aria-expanded="false" aria-controls="primaryNav">
+            ☰
+        </button>
+
+        <nav id="primaryNav" class="navigation">
+            <a href="index.html" class="active" aria-current="page">Home</a>
+            <a href="chamber/">Chamber</a>
+            <a href="final/">Final</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="home-layout">
+            <section class="about card">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm Boma Richards Ojugba, a Software Development
+                    student at BYU-Pathway Worldwide. I'm learning to build
+                    websites and software using modern development tools.
+                </p>
+            </section>
+
+            <section class="photo card">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Photo of Boma Richards Ojugba"
+                    width="400" height="400">
+            </section>
+
+            <section class="certificate card">
+                <h2>Web and Computer Programming Certificate</h2>
+
+                <div class="course-filters" aria-label="Filter courses">
+                    <button type="button" data-filter="all" class="selected">All Courses</button>
+                    <button type="button" data-filter="WDD">WDD Courses</button>
+                    <button type="button" data-filter="CSE">CSE Courses</button>
+                </div>
+
+                <p id="creditTotal" aria-live="polite">Total credits: 0</p>
+                <div id="courseList" class="course-list"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+       <div class="social-links">
+    <a href="https://github.com/richardboma14-create"
+       target="_blank" rel="noopener noreferrer">
+        GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/boma-ojugba-943743339"
+       target="_blank" rel="noopener noreferrer">
+        LinkedIn
+    </a>
+</div>
+
+
+        <p>
+            &copy; <span id="currentyear"></span> Boma Richards Ojugba |
+            Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

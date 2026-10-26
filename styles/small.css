@@ -1,0 +1,240 @@
+/* General page styles */
+:root {
+    --navy: #123047;
+    --gold: #e9b44c;
+    --light: #f4f7fa;
+    --white: #ffffff;
+    --text: #202b35;
+    --border: #d5dee7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: var(--text);
+    background-color: var(--light);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+/* Header and brand */
+header {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.brand img {
+    width: 48px;
+    height: 48px;
+}
+
+/* Mobile hamburger button */
+#menuButton {
+    border: 2px solid var(--gold);
+    border-radius: 6px;
+    padding: 0.35rem 0.7rem;
+    color: var(--white);
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+/* Mobile navigation */
+.navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+}
+
+.navigation a:hover,
+.navigation a:focus-visible {
+    background-color: var(--gold);
+    color: var(--navy);
+}
+
+.navigation a.active {
+    border-bottom: 3px solid var(--gold);
+    font-weight: 700;
+}
+
+/* Main content */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    color: var(--navy);
+    font-size: 2rem;
+    margin: 0 0 1rem;
+}
+
+h2 {
+    color: var(--navy);
+    font-size: 1.25rem;
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--gold);
+}
+
+.home-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+    min-width: 0;
+}
+
+.about p {
+    margin-bottom: 0;
+}
+
+.photo img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* Course filter buttons */
+.course-filters {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.course-filters button {
+    background-color: var(--light);
+    color: var(--navy);
+    border: 1px solid var(--navy);
+    border-radius: 5px;
+    padding: 0.65rem;
+}
+
+.course-filters button:hover,
+.course-filters button:focus-visible {
+    background-color: var(--gold);
+    color: var(--navy);
+}
+
+.course-filters button.selected {
+    background-color: var(--navy);
+    color: var(--white);
+    border-color: var(--navy);
+}
+
+#creditTotal {
+    font-weight: 700;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+
+.course-card {
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-left: 5px solid #657786;
+    border-radius: 5px;
+    background-color: var(--white);
+}
+
+.course-card.completed {
+    border-left-color: #247447;
+    background-color: #eaf5ee;
+}
+
+.course-card h3 {
+    margin: 0;
+    color: var(--navy);
+    font-size: 1rem;
+}
+
+.course-card p {
+    margin: 0.25rem 0 0;
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem 1rem;
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: var(--gold);
+    font-weight: 700;
+}
+
+footer p {
+    margin: 0.75rem 0 0;
+    overflow-wrap: anywhere;
+}
+
+#lastModified {
+    font-size: 0.9rem;
+}
