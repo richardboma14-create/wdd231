@@ -53,14 +53,11 @@ header {
 .brand-name {
     font-family: var(--heading-font);
     font-size: 0.85rem;
+    color: var(--white)
 }
 
 .brand-name strong {
     display: block;
-}
-
-.brand-name {
-    color: var(--white);
 }
 
 /* NAVIGATION */
