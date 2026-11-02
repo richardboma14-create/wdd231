@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Niger Delta Tech Hub",
+    "address": "12 Aba Road, Port Harcourt",
+    "phone": "+234 000 000 0001",
+    "email": "info@example.com",
+    "website": "https://example.com",
+    "image": "tech-hub.jpg",
+    "membershipLevel": 3,
+    "description": "Technology training, software development, and digital solutions.",
+    "category": "Technology"
+  },
+  {
+    "name": "Riverside Business Hotel",
+    "address": "8 Stadium Road, Port Harcourt",
+    "phone": "+234 000 000 0002",
+    "email": "info@example.com",
+    "website": "https://example.com",
+    "image": "hotel.jpg",
+    "membershipLevel": 2,
+    "description": "Comfortable accommodation and hospitality services.",
+    "category": "Hospitality"
+  },
+  {
+    "name": "Garden City Foods",
+    "address": "25 Woji Road, Port Harcourt",
+    "phone": "+234 000 000 0003",
+    "email": "info@example.com",
+    "website": "https://example.com",
+    "image": "food.jpg",
+    "membershipLevel": 3,
+    "description": "Food production, catering, and local food distribution.",
+    "category": "Food"
+  },
+  {
+    "name": "Eastern Energy Services",
+    "address": "16 Trans-Amadi Industrial Layout, Port Harcourt",
+    "phone": "+234 000 000 0004",
+    "email": "info@example.com",
+    "website": "https://example.com",
+    "image": "energy.jpg",
+    "membershipLevel": 2,
+    "description": "Energy support, equipment supply, and technical services.",
+    "category": "Energy"
+  },
+  {
+    "name": "Bright Future Academy",
+    "address": "5 Peter Odili Road, Port Harcourt",
+    "phone": "+234 000 000 0005",
+    "email": "info@example.com",
+    "website": "https://example.com",
+    "image": "academy.jpg",
+    "membershipLevel": 1,
+    "description": "Educational services and professional development.",
+    "category": "Education"
+  },
+  {
+    "name": "Harbour View Properties",
+    "address": "31 Ada George Road, Port Harcourt",
+    "phone": "+234 000 000 0006",
+    "email": "info@example.com",
+    "website": "https://example.com",
+    "image": "property.jpg",
+    "membershipLevel": 1,
+    "description": "Property sales, rentals, and real estate management.",
+    "category": "Real Estate"
+  },
+  {
+    "name": "Coastal Logistics Limited",
+    "address": "10 Nchia Road, Port Harcourt",
+    "phone": "+234 000 000 0007",
+    "email": "info@example.com",
+    "website": "https://example.com",
+    "image": "logistics.jpg",
+    "membershipLevel": 2,
+    "description": "Transportation, delivery, and supply-chain services.",
+    "category": "Logistics"
+  }
+]

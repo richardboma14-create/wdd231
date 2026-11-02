@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore the Port Harcourt Chamber of Commerce business directory. Discover local businesses, services, and opportunities across Port Harcourt, Rivers State, Nigeria.">
+
+    <meta name="author" content="Boma Richards Ojugba">
+
+    <title>Business Directory | Port Harcourt Chamber of Commerce</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Port Harcourt Chamber of Commerce | Business Directory">
+    <meta property="og:description" content="Discover businesses, services, and commercial opportunities in Port Harcourt, Nigeria.">
+    <meta property="og:image" content="https://richardboma14-create.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url" content="https://richardboma14-create.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="brand">
+                <span class="brand-icon">PH</span>
+                <span class="brand-name">
+                    Port Harcourt
+                    <strong>Chamber of Commerce</strong>
+                </span>
+            </a>
+
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="directory.html" class="active">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="about.html">About</a>
+                <a href="podcast.html">Podcast</a>
+                <a href="events.html">Events</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="directory-section">
+            <h1>Business Directory</h1>
+
+            <p class="intro">
+                Discover businesses and services that make
+                Port Harcourt a thriving commercial community.
+            </p>
+
+            <div class="view-controls">
+                <button id="grid-view" class="active" aria-pressed="true">
+                    Grid
+                </button>
+
+                <button id="list-view" aria-pressed="false">
+                    List
+                </button>
+            </div>
+
+            <div id="members-container" class="members-grid">
+                <!-- Business information will be loaded here using JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <h2>Port Harcourt Chamber of Commerce</h2>
+            <p>Port Harcourt, Rivers State, Nigeria</p>
+            <p>Email: info@phchamber.org</p>
+            <p>Phone: +234 800 000 0000</p>
+        </div>
+
+        <div class="footer-social">
+            <!-- Social media links will be added later -->
+        </div>
+
+        <div class="footer-development">
+            <p>WDD 231 Class Project</p>
+            <p>Boma Richards Ojugba</p>
+            <p>&copy; <span id="current-year"></span> Port Harcourt Chamber of Commerce</p>
+            <p>Last Modification: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+</body>
+</html>
