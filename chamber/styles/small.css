@@ -59,6 +59,10 @@ header {
     display: block;
 }
 
+.brand-name {
+    color: var(--white);
+}
+
 /* NAVIGATION */
 
 #menu-button {
