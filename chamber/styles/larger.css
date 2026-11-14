@@ -69,3 +69,55 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+/* ==============================
+   HOME PAGE DESKTOP LAYOUT
+================================= */
+
+@media screen and (min-width: 32rem) {
+
+    .hero img {
+        height: 420px;
+    }
+
+    .hero-content {
+        padding: 2.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+        max-width: 750px;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+        max-width: 650px;
+    }
+
+    .events-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .forecast-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .spotlights-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 60rem) {
+
+    .hero img {
+        height: 480px;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .spotlights-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
