@@ -69,11 +69,9 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
 /* ==============================
    HOME PAGE DESKTOP LAYOUT
 ================================= */
-
 @media screen and (min-width: 32rem) {
 
     .hero img {
@@ -119,5 +117,41 @@
 
     .spotlights-container {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* JOIN PAGE - LARGE SCREEN LAYOUT */
+
+@media screen and (min-width: 800px) {
+
+    .join-main {
+        padding: 3rem 2rem;
+    }
+
+    .join-layout {
+        grid-template-columns: 1.5fr 1fr;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .application-section,
+    .membership-section {
+        padding: 2rem;
+    }
+
+    .membership-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .membership-card {
+        padding: 1.5rem;
+    }
+
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+    .membership-card {
+        animation: none;
     }
 }
